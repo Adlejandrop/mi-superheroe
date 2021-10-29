@@ -1,0 +1,38 @@
+#logo{
+
+    background-image: url(../img/sh2.jpg);
+   
+    background-repeat: no-repeat;
+    height:430px;
+    width:500px;
+    
+}
+
+section{
+    margin-top:30px;
+}
+
+#heroImage {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 100px;
+}
+
+
+p {
+    display: inline;
+}
+
+
+nav {
+height:100px;
+background-color: darkblue;
+
+
+
+
+}
+
+nav a {
+    color: white;
+}

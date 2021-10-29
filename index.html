@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agencia de Superheroes Pinedo y Co.</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.ico">
+  </head>
+
+  <body>
+   
+<nav class="navbar">
+  <a class="navbar-brand" href="#">
+    <img src="assets/img/sh2.jpg" width="70" height="70" class="d-inline-block align-top mr-5" alt="">
+    Agencia de Superheroes Pinedo y Co.
+  </a>
+</nav>
+
+    <div class="mx-auto" id="logo"></div>
+
+    <section class="container" id="searchSection">
+      <h1>Encuentra tu Superheroe</h1>
+
+      <form>
+        <label for="heroNumber">Escribe un numero del 1 al 732</label><br />
+        <input type="number" class="w-100" id="heroInput" name="hid" /><br />
+        <button type="button" class="btn btn-primary mt-3">KAPOW!!</button>
+      </form>
+    </section>
+
+    <section id="heroResult">
+      <div class="row">
+        <div class="col-6 ">
+          <div class="card mb-3">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img id="heroImage" src="" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="d-inline">Nombre:</h5><h5 class="card-title" class="d-inline" id="name"></h5>
+                  <p class="d-inline">Conexiones:</p><p class="card-text" class="d-inline" id="connections"></p>
+                  <p class="card-text d-inline">
+                    <small class="text-muted">Publicado por:</small>
+                    <p class="d-inline card-text" class="d-inline" id="postedBy">
+                    <small class="text-muted"></small>
+                  </p>
+                  <hr />
+                  <p class="d-inline">Ocupacion:</p><p class="d-inline" id="occupation"></p>
+                  <hr />
+                  <p class="d-inline">Primera Aparicion:</p><p class="d-inline" id="firstAppearance"></p>
+                  <hr />
+                  <p class="d-inline">Altura:</p><p class="d-inline" id="height"></p>
+                  <hr />
+                  <p class="d-inline">Peso:</p><p class="d-inline" id="weight"></p>
+                  <hr />
+                  <p class="d-inline">Alianzas:</p><p class="d-inline" id="aliases"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6">
+
+          <div id="chartContainer" style="height: 100%; width: 100%;"></div>
+        </div>
+      </div>
+    </section>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"
+    ></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
